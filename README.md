@@ -1,6 +1,6 @@
 # 🤖 Gemini Chatbot
 
-**Gemini Chatbot** is a lightweight, browser-based AI assistant powered by Google's Gemini 1.5 Flash model. This chatbot offers intelligent conversation capabilities and an advanced feature that allows users to upload PDF documents for instant summarization, topic extraction, and question suggestions — all directly in the browser with no server setup required.
+**Gemini Chatbot** is a sleek, browser-based AI assistant powered by Google's Gemini 1.5 Flash model. It lets users engage in natural conversations and also upload PDF documents to get instant summaries, topic extractions, and smart question suggestions — all directly from the browser, with no backend setup required.
 
 ![Chatbot Screenshot](./bot.jpg)
 
@@ -8,116 +8,140 @@
 
 ## 📌 Table of Contents
 
-- [Features](#-features)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Setup & Installation](#-setup--installation)
-- [User Manual](#-user-manual)
-- [API Key & Security](#-api-key--security)
-- [License](#-license)
-- [Author](#-made-with-love-by-hitesh-sharma)
+- ✨ [Features](#-features)
+- 🛠️ [Technology Stack](#-technology-stack)
+- 📁 [Project Structure](#-project-structure)
+- 🧰 [Setup & Installation](#-setup--installation)
+- 📘 [User Manual](#-user-manual)
+- 🔐 [API Key & Security](#-api-key--security)
+- 📄 [License](#-license)
+- ❤️ [Author](#-️made-with-love-by-hitesh-sharma)
 
 ---
 
 ## ✨ Features
 
-- 💬 **Conversational Chatbot** – Talk naturally with an AI powered by Gemini.
-- 📄 **PDF Analysis** – Upload PDFs and get:
-  - Summarized content in bullet points
-  - Main topics extracted
-  - Suggested questions based on content
-- 🧠 **Real-Time Responses** – All interactions are instant and client-side.
-- 💻 **Responsive UI** – Clean dark-mode design with mobile-friendly layout.
-- 🖼️ **Profile Avatars** – User and bot display pictures.
-- 🔧 **No Backend Required** – Fully frontend-based project.
+- 💬 **Conversational Chatbot**  
+  Chat naturally with a Gemini-powered AI model using text input.
+
+- 📄 **PDF Upload & Analysis**  
+  Users can upload a `.pdf` file to:
+  - Get a quick summary (3–5 bullet points)
+  - Extract main topics or sections
+  - Receive 3–5 questions the user might ask about the document
+
+- ⚡ **Real-Time Responses**  
+  All communication with the AI is instant and runs directly in the browser.
+
+- 🖼️ **Profile Avatars**  
+  Visual distinction between user and bot using profile images.
+
+- 🌓 **Responsive Dark-Themed UI**  
+  Clean, mobile-friendly interface with a modern look.
+
+- 🧩 **Frontend-Only Project**  
+  No server or backend setup required — just open and use.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology      | Description                                           |
-|-----------------|-------------------------------------------------------|
-| HTML5           | Page structure and layout                            |
-| CSS3            | Custom dark-mode styling                             |
-| JavaScript (Vanilla) | Handles chat logic, events, and API requests       |
-| Gemini 1.5 Flash API | Powers all the intelligent chat responses         |
-| PDF.js          | Parses and extracts text from uploaded PDF files     |
+| Technology                | Purpose                                                  |
+|---------------------------|----------------------------------------------------------|
+| **HTML5**                 | Core structure and layout of the chatbot page            |
+| **CSS3**                  | Styling the UI with a custom dark-mode interface         |
+| **JavaScript (Vanilla)**  | Handles message flow, user interaction, PDF handling     |
+| **Google Gemini API**     | Provides smart, conversational responses                 |
+| **PDF.js**                | Client-side PDF parsing to extract text                  |
 
 ---
 
 ## 📁 Project Structure
 
-├── index.html # Main HTML template
-├── styles.css # Styles and responsive layout
-├── script.js # JavaScript logic and API handling
-├── bot.jpg # Bot avatar image
-├── user.jpg # User avatar image
+📂 gemini-chatbot/
+├── index.html # Main HTML file with structure
+├── styles.css # Dark-themed styles for chatbot interface
+├── script.js # JavaScript logic and Gemini API handling
+├── bot.jpg # Avatar image for the chatbot
+├── user.jpg # Avatar image for the user
+
 
 ---
 
 ## 🧰 Setup & Installation
 
-1. **Clone the repository:**
+Follow these steps to run Gemini Chatbot locally:
+
+1. **Clone this repository:**
 
 ```bash
 git clone https://github.com/yourusername/gemini-chatbot.git
 cd gemini-chatbot
-Insert your Gemini API Key in script.js:
 
-2.javascript
-const API_KEY = 'YOUR_API_KEY_HERE'; // Replace this line
+2. add your API key:
 
-3.Run the app:
-Simply open index.html in your browser.
+Open script.js and replace the placeholder with your real Gemini API key:
+const API_KEY = 'AIzaSyA31nPOsoxjCSYQsg2l5u3QvUBVbIE835U';
+const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 
-  📘 User Manual
+Run the application:
+
+Open the index.html file in any modern browser (Chrome, Firefox, Edge).
+
+No installation, build process, or server is required.
+
+📘 User Manual
 💬 Chat Mode
 Type your message in the input field.
 
-Click Send or press Enter.
+Click the Send button or press Enter.
 
-AI responds in real time.
+The chatbot will respond immediately below your message.
 
 📄 PDF Mode
-Click Upload PDF.
+Click on the Upload PDF button.
 
-Select a .pdf file from your system.
+Choose any .pdf file from your computer.
 
-The chatbot:
+The chatbot will:
 
-Summarizes the content
+Summarize the contents
 
-Highlights main topics
+List the main topics covered
 
-Suggests questions
+Suggest questions related to the document
 
 🔄 Reset
-Just refresh the page to start a new session.
+Simply refresh the browser to start a new session.
 
 🔐 API Key & Security
-⚠️ Important: This project is fully frontend-based, which means your API key is exposed in the browser.
+⚠️ Warning: This project is frontend-only, meaning your Gemini API key is exposed in the browser’s JavaScript console.
 
-Best Practices:
-Use a proxy server in production to hide your API key.
+✅ Best Practices (For Production Use):
+Use a backend server or proxy to hide your API key.
 
-Restrict the key in Google Cloud Console:
+In Google Cloud Console:
 
-Limit by domain, IP, or usage quota.
+Restrict your API key by domain
 
+Set usage quotas
+
+Enable logging and monitoring
+
+This prevents abuse and keeps your key secure.
 
 MIT License
 
 Copyright (c) 2025 Hitesh Sharma
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the “Software”), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
-
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
 
 ❤️ Made with love by Hitesh Sharma
+Thank you for checking out my project! Feel free to star ⭐ it, fork 🍴 it, or reach out with feedback. Keep building amazing things!
