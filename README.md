@@ -85,7 +85,7 @@ cd gemini-chatbot
 Open `script.js` and replace the placeholder with your **actual Gemini API key**:
 
 ```js
-const API_KEY = 'YOUR_GEMINI_API_KEY';
+const API_KEY = 'AIzaSyA31nPOsoxjCSYQsg2l5u3QvUBVbIE835U';
 const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 ```
 
