@@ -4,6 +4,11 @@
 
 ![Gemini Chatbot Screenshot](./bot.jpg)
 
+
+## 🌐 Live Demo
+
+🔗 [Click here to view the live site](https://inspiring-bonbon-245ab4.netlify.app/)  
+
 ---
 
 ## 📌 Table of Contents
